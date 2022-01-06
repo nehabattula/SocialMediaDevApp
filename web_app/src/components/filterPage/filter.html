@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="filter.css" />
+  <!--css path-->
+  <!-- <script  defer src="app/index.js" crossorigin="anonymous"></script> script path -->
+
+</head>
+<title>To Do List</title>
+
+<body>
+  <!-- <header class="gradient">
+        <h1>TO DO LIST</h1>
+     </header> -->
+
+  <form method="post" action='' class="form-class" id="todoData">
+    <!--creating form and input elements-->
+
+    <div class="devinput">
+      <label class="name">Developer's Name:</label>
+      <input type="text" class="name-text" placeholder='Enter Name' name="name"><br><br>
+    </div>
+    <div class="skill-set">
+      <label>Select a Skill:
+
+        <select name="skills" class="select-skills">
+          <option value="Anyskill">Any</option>
+          <option value="Javascript">Javascript</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="C#">C#</option>
+          <option value="C++">C++</option>
+          <option value="Ruby">Ruby</option>
+        </select>
+      </label>
+    </div>
+    <div class='button-div1'>
+      <input type="submit" class="login-button1" value="FILTER" />
+      <!-- <p><Link to='/login' className="login-if-signedup">FILTER</Link></p> -->
+    </div>
+  </form>
+  <!-- <input type="text" name="title" placeholder="Enter a title" /><br><br><br>
+        <input type="text" name="description" placeholder="Enter the description" /><br><br><br><br>
+        <input type="date" name="duedate" placeholder="Enter the due date" /><br><br><br><br>
+        <input type="time" name="time" placeholder="Enter the time" /><br><br><br>
+        <input type="submit" name = "addButton" class ="addcss"value="ADD"> <!--add button-->
+
+</body>
+
+</html>

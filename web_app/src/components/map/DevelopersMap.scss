@@ -1,0 +1,11 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.leaflet-container {
+  @include resize(100vw, 100vh);
+}
+
+.maps {
+  padding-top: 80px;
+  margin-top: 10px;
+}

@@ -1,0 +1,130 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+html {
+
+.container-div1 {
+        @include resize(700px, 550px);
+        background: inherit;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+
+        .password-2-field {
+            position: relative;
+            left: 5px;
+        }       
+        
+        .button-div1 {
+            position: relative;
+            top: 31px;
+
+            p {
+                @include positionRelatively(60px, 245px);
+                color: $white;
+                font-family: $font-family;
+            }
+
+            .login-if-signedup {
+                text-decoration: underline;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.4s;
+                color: $white;
+                font-family: $font-family;
+            }
+
+            .login-if-signedup:hover{
+                color: #e6c5c5;
+                text-decoration: none;
+            }
+
+            .signup-submit-button {
+                @include resize(350px, 40px);
+                border: none;
+                background-color: $black;
+                color: $white;
+                cursor: pointer;
+                position: relative;
+                transition: 0.4s;
+                font-weight: bold;
+                font-family: sans-serif;    
+                left: -1px;
+            }
+        
+            .signup-submit-button:hover {
+                background-color: #4a0d0d;
+            }
+
+            .signup-submit-button:active {
+                background-color: $black;
+            }
+        }
+}
+
+.container-div1::before {
+    @include resize(750px, 600px);
+    @include positionAbsolutely(-25px, -25px);
+    content: '';
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+}
+
+.password-check {
+    @include positionRelatively(3px, -125px);
+    @include borderCreator(1px solid $white, 20px, $white);
+    @include resize(10px, 10px);
+    float: right;
+}
+
+.password-check[score='null'] {
+    @include positionRelatively(3px, -125px);
+    @include borderCreator(1px solid $white, 20px, $white);
+    @include resize(10px, 10px);
+    float: right;
+
+}
+
+.password-check[score='0'] {
+    @include positionRelatively(3px, -125px);
+    @include borderCreator(1px solid red, 20px, red);
+    @include resize(10px, 10px);
+    float: right;
+
+}
+
+.password-check[score='1'] {
+    @include positionRelatively(3px, -125px);
+    @include borderCreator(1px solid #e66232, 20px, #e66232);
+    @include resize(10px, 10px);
+    float: right;
+}
+
+.password-check[score='2'] {
+    @include positionRelatively(3px, -125px);
+    @include borderCreator(1px solid #e8aa58, 20px, #e8aa58);
+    @include resize(10px, 10px);
+    float: right;
+}
+
+.password-check[score='3'] {
+    @include positionRelatively(3px, -125px);
+    @include borderCreator(1px solid #ffcc00, 20px, #ffcc00);
+    @include resize(10px, 10px);
+    float: right;
+}
+
+.password-check[score='4'] {
+    @include positionRelatively(3px, -125px);
+    @include borderCreator(1px solid #1cb005, 20px, #1cb005);
+    @include resize(10px, 10px);
+    float: right;
+}
+
+}

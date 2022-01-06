@@ -1,0 +1,26 @@
+// mixin that positions elements relatively
+@mixin positionRelatively($top, $left) {
+    position: relative;
+    top: $top;
+    left: $left;
+}
+
+// mixin that positions elements absolutely
+@mixin positionAbsolutely($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+// resizes the element
+@mixin resize($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// mixin to create borders
+@mixin borderCreator($border, $border-radius, $fillcolor) {
+    border: $border;
+    border-radius: $border-radius;
+    background-color: $fillcolor;
+}

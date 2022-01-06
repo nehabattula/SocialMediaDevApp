@@ -1,0 +1,315 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.top-container {
+
+.secondary-main-container{
+    @include resize(400px, 400px);
+    @include positionRelatively(1px, -580px);
+    border: none;
+    float: left;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    .image-div {
+        @include resize(350px, 350px);
+        @include positionRelatively(24px, 25px);
+        border-radius: 10px;
+
+
+        .image-container {
+            @include resize(300px, 300px);
+            @include positionRelatively(29x, 27px);
+            border-radius: 400px;
+        }
+    }
+
+    input[type="file"] {
+        display: none;
+    }    
+
+    .image-select-button {
+        @include positionRelatively(79x, 135px);
+        @include borderCreator(1px solid $red, null, $red);
+        padding: 8px;
+        padding-bottom: 8px;
+        font-family: $font-family;
+        color: $white;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+    .image-select-button:hover {
+        background-color: #6b1111;
+    }
+
+    .image-select-button:active {
+        background-color: black;
+    }
+}
+
+.main-container-profile {
+    margin-top: 120px;
+    float: right;
+    margin-right: 15%;
+    width: 550px;
+
+    .submit-button {
+        @include resize(170px, 40px);
+        @include positionRelatively(10px, 192px);
+        background-color: $red;
+        border: none;
+        color: $white;
+        box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: 0.4s;
+        margin-bottom: 20px;
+        font-size: 17px;
+        margin-bottom: 50px;
+    }
+
+    .add-experience-button {
+        @include resize(30px, 30px);
+        border-radius: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        background-color: $red;
+        color: $white;
+        cursor: pointer;
+        position: relative;
+        left: 481px;
+        transition: 0.4s;
+        z-index: 0;
+    }
+
+    .add-experience-button:active {
+        background-color: $black;
+    }
+
+    .profession-experience-heading {
+        @include positionRelatively(4px, -27px);
+    }
+
+    .form-text {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 25px;
+        font-family: $font-family;
+        margin-top: 5px;
+        color: #7a0808;
+    }
+
+    input[type='text'] {
+        @include resize(450px, 35px);
+        @include borderCreator(2px solid lightgrey, null,null);
+        padding: 2px;
+        border: 2px solid lightgrey;
+    }
+
+    label{
+        color: black;
+        font-size: 18px;
+        margin-left: 9px;
+    }
+
+    input[type='checkbox'] {
+        width: 15px;
+    }
+
+
+    .profile-form {
+        @include borderCreator(1px solid transparent, 10px, transparent);
+        padding: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+        height: 620px;
+        transition: 0.4s;
+
+        .education-form-input {
+            position: relative;
+            top: -368px;
+
+            .location-field {
+                width: 390px;
+            }
+
+            .location-image {
+                @include resize(30px, 30px);
+                @include positionRelatively(8px, 30px);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .profile-form:hover {
+        background-color: #eefcff;
+    }
+
+    .career-form {
+        border: 1px solid transparent;
+        padding: 30px; 
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+        transition: 0.4s;
+
+        .experience-education-fields {
+            margin: 15px;
+        }
+
+        .counter{
+            text-align: center;
+            padding-bottom: 10px;
+            color: $red;
+            font-family: $font-family;
+        }
+    }
+
+    .career-form:hover {
+        background-color: #e5f7e5;
+    }
+
+    input[type="date"] {
+        display: flex;
+        width: 150px;
+    }
+
+    .education-form {
+        border: 1px solid transparent;
+        padding: 30px; 
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+        transition: 0.4s;
+
+        .experience-education-fields {
+            margin: 15px;
+        }
+
+        .counter{
+            text-align: center;
+            padding-bottom: 10px;
+            color: $red;
+            font-family: $font-family;
+        }
+    }
+
+    .education-form:hover {
+        background-color: #ffffe6;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 30px;
+        width: 600px;
+    }
+
+    .profile-header {
+        position: relative;
+        left: -35px;
+    }
+
+    .text-area {
+        width: 100%;
+        padding: 0.4rem;
+        font-family: sans-serif;
+    }
+
+    .social-media-button {
+        @include resize(150px, 30px);
+        background-color: $red;
+        border: none;
+        color: $white;
+        box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: 0.4s;
+        margin-bottom: 20px;
+    }
+
+    .social-media-urls {
+        @include positionRelatively(18px, 165px);
+        color: $red;
+        font-family: $font-family;
+    }
+
+    .social-media-fields {
+        margin: 10px;
+        position: relative;
+        top: -350px;
+        
+        i.fa-twitter {
+            color: #38a1f3;
+            font-size: 35px;
+            position: relative;
+            top: 5px;
+          }
+          i.fa-facebook {
+            color: #3b5998;
+            font-size: 35px;
+            position: relative;
+            top: 5px;
+          }
+          i.fa-instagram {
+            color: #3f729b;
+            font-size: 35px;
+            position: relative;
+            top: 5px;
+          }
+          i.fa-youtube {
+            color: #c4302b;
+            font-size: 35px;
+            position: relative;
+            top: 5px;
+          }
+          i.fa-linkedin {
+            color: #0077b5;
+            font-size: 35px;
+            position: relative;
+            top: 5px;
+          }
+
+        .social-media-input-1 {
+            width: 400px;
+            position: relative;
+            left: 29px;
+        }
+
+        .social-media-input-2 {
+            width: 400px;
+            position: relative;
+            left: 33px;
+        }
+
+        .social-media-input-3 {
+            width: 400px;
+            position: relative;
+            left: 25px;
+        }
+
+        .social-media-input-4 {
+            width: 400px;
+            position: relative;
+            left: 32px;
+        }
+
+        .social-media-input-5 {
+            width: 400px;
+            position: relative;
+            left: 32px;
+        }
+    }
+
+    .social-media-button:hover {
+        background-color: #6b1111;
+    }
+
+    .social-media-button:active {
+        background-color: $red;
+    }
+}
+}

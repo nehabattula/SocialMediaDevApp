@@ -1,0 +1,2 @@
+export const GIT_PROJECTS = "GIT_PROJECTS";
+export const GIT_PROJECTS_ERROR = "GIT_PROJECTS_ERROR";

@@ -1,0 +1,134 @@
+
+.form-class{
+    /* position: relative;
+    left: 446px;
+    top: 198px;
+    font-size: 22px;
+    border: solid black 1px;
+    width: 437px;
+    height: 85px;
+    padding: 30px;
+    opacity: 0.5;
+    background: linear-gradient( 
+90deg, #c51e1e 0%, #b56262 50%, #e3d8d8 100%); */
+
+width: 485px;
+height: 201px;
+content: '';
+position: absolute;
+top: 190px;
+left: 458px;
+bottom: 0;
+right: 0;
+background: inherit;
+box-shadow: inset 0 0 0 500px rgb(255 255 255 / 20%);
+opacity: 0.8;
+
+
+}
+
+.login-button1 {
+    width: 90px;
+    height: 40px;
+    border: none;
+  
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    position: relative;
+    top: 47px;
+    left: 193px;
+    transition: 0.4s;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.login-button1:hover {
+ 
+    background-color: #4a0d0d;
+}
+
+.login-button1:active {
+    background-color: black;
+}
+
+.skill-set{
+    position: relative;
+    left: 20px;
+    top: 29px;
+}
+
+.name{
+    position: relative;
+    left: 51px;
+    top: 27px;
+}
+
+.devinput{
+    z-index: +1;
+}
+
+
+.skills{
+  
+
+ 
+    
+    position: relative;
+    left: 46px;
+    height: 30px;
+    width: 78px;
+
+}
+
+body  {
+    background-image: url("back2.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+.select-skills{
+    position: relative;
+    left: 67px;
+    top: -3px;
+    height: 29px;
+}
+
+input{
+    outline-color: #f7c8c8;
+    border: 1px solid grey;
+    width: 196px;
+    height: 27px;
+    font-weight: 50;
+    font-family: sans-serif;
+}
+
+.name-text{
+    position: relative;
+    left: 31px;
+    top: 26px;
+}
+.name{
+    position: relative;
+    top: 26px;
+    left: 21px;
+}
+
+.skills{
+    width: 86px;
+    height: 27px;
+    position: relative;
+    left: 47px;
+    outline-color: #f7c8c8;
+}
+
+label{
+    font-family: sans-serif;
+    color: aliceblue;
+    font-size: 24px;
+}

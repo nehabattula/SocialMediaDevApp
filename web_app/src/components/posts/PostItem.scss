@@ -1,0 +1,87 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+//common -element
+.round-img {
+  @include resize(150px, 150px);
+  border-radius: 50%;
+}
+
+//common
+.person-name {
+  text-align: inherit;
+}
+
+.discussion-button {
+  background-color: $black;
+  border: none;
+  color: $white;
+  margin-left: 5px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  grid-column-gap: 19px;
+  column-gap: 30px;
+  padding: 20px;
+}
+
+.float-right {
+  float: right;
+}
+
+//common
+.no-underline {
+  text-decoration: none;
+  color: $black;
+}
+
+//common style
+.delete-post {
+  float: right;
+  border: none;
+  background-color: $white;
+  font-size: 24px;
+}
+
+.font-icon-button {
+  border: none;
+  background-color: $white;
+  font-size: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.post-content {
+  margin-top: 15px;
+  color: $black;
+}
+
+.post-item {
+  margin-top: 30px;
+  background-color: $white;
+  width: 84%;
+}
+
+.post-details {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  background-color: $white;
+  border-radius: 13px;
+}

@@ -1,0 +1,26 @@
+.landing-container {
+  height: 100vh;
+  background-color: rgb(182, 10, 10);
+}
+
+.img {
+  //   height: 100vh;
+  height: 350px;
+  width: 355px;
+  background-image: url("../../images/husky.png");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  margin-left: 300px;
+}
+
+.main-title {
+  position: relative;
+  top: 30%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 50px;
+}
+
+.img-position {
+}

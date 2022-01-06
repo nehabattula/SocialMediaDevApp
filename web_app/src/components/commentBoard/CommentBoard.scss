@@ -1,0 +1,36 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.comment-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  background-color: $dark-red;
+}
+
+.add-comment {
+  @include borderCreator(1px solid grey, 12px, grey);
+  margin-right: -1px;
+  margin-top: 40px;
+  padding: 20px;
+  width: 82%;
+  box-shadow: 0 4px 8px 0 black;
+}
+
+.back-button {
+  margin-top: 22px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+//common
+.no-decoration {
+  text-decoration: none;
+  color: black;
+}
+
+.comment-item {
+  margin-top: 40px;
+  width: 85%;
+}

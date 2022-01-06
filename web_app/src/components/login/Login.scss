@@ -1,0 +1,124 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+:root {
+    --primary-color: #17a2b8;
+    --dark-color: #343a40;
+    --light-color: #f4f4f4;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    height: 100vh;
+    background-image: url('../../images/background12.jpg');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    z-index: 1;
+
+    input {
+        @include resize(350px, 40px);
+        margin: 20px auto;
+        display: block;
+        padding: 8px;
+        border: 1px solid grey;
+        position: relative;
+        top: 60px;
+        font-size: 15px;
+        font-weight: 50;
+        outline-color: #f7c8c8;
+    }
+
+    button{
+        display: block;
+        margin: 20px;
+    }
+
+    .login-button {
+        @include resize(350px, 40px);
+        @include positionRelatively(51px, 436px);
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-decoration: none!important;
+    }
+
+    .login-button:hover {
+        background-color: #4a0d0d;
+    }
+
+    .login-button:active {
+        background-color: $black;
+    }
+
+    
+    .signup-button {
+        @include positionRelatively(51px, 615px);
+        height: 400px;
+        padding: 8px;
+        padding-left: 95px;
+        padding-right: 95px;
+        border: 2px solid #7a0404;
+        border-radius: 60px;
+        background-color: $white;
+        width: 350px;
+        color: #7a0404;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        font-weight: 100;
+        font-family: $font-family;
+        text-decoration: none!important;
+    }
+
+    .signup-button:hover {
+        background-color: #7a0404;
+        color: $white;
+    }
+
+    .signup-button:active{
+        background-color: #f7c8c8;
+    }
+
+    .button-div {
+        @include positionRelatively(80px, -435px);
+    }
+    
+    .container-div {
+        @include resize(700px, 450px);
+        background: inherit;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+
+        .login-signup-div {
+            display: grid;
+        }
+    }
+
+    .container-div::before {
+        @include resize(750px, 500px);
+        content: '';
+        position: absolute;
+        top: -25px;
+        left: -25px;
+        bottom: 0;
+        right: 0;
+        background: inherit;
+        box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+        filter: blur(10px);
+    }
+}

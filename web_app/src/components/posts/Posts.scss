@@ -1,0 +1,33 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.container {
+  margin-top: 60px;
+  margin-right: 0px;
+}
+
+.posts-container {
+  height: 100vh;
+  background-color: $dark-red;
+}
+
+.posts-text-center {
+  margin-top: 50px;
+  text-align: center;
+  margin-right: 179px;
+  color: $white;
+}
+
+.postItem {
+  margin-top: 30px;
+}
+
+.welcome-text {
+  font-size: 26px;
+}
+
+//common
+.background-color {
+  background-color: $dark-red;
+  margin-top: 0px;
+}
